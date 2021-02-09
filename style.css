@@ -31,3 +31,14 @@ body{
     color: #fff;
     padding: 5px 20px;
 }
+.main{
+    display: flex;
+}
+.type{
+    display: flex;
+    flex-direction: column;
+}
+.questions{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
