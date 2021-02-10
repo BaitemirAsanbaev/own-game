@@ -20,16 +20,19 @@ let questions = document.querySelector('.questions');
 let card = document.querySelector('.card');
 let question = document.querySelector('.question');
 let answer = document.querySelector('.answer');
+let showAnswer = document.querySelector('.answer-btn');
 
 function questionWrite(qid, aid){
     question.innerText = qid;
-    answer.innerText = aid;
+    showAnswer.addEventListener('click', function(){
+        answer.innerText = aid;
+    })
 }
 
 questions.addEventListener('mousedown', function(event){
     if(event.target.tagName == 'DIV'){
         if(event.target.getAttribute('id') == 'n1q1'){
-            questionWrite("");
+            questionWrite("", "");
         }
         if(event.target.getAttribute('id') == 'n1q2'){
             questionWrite("");
