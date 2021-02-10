@@ -19,8 +19,11 @@ teams.addEventListener('mousedown', function(event){
 let questions = document.querySelector('.questions');
 let card = document.querySelector('.card');
 let question = document.querySelector('.question');
-function questionWrite(qid){
+let answer = document.querySelector('.answer');
+
+function questionWrite(qid, aid){
     question.innerText = qid;
+    answer.innerText = aid;
 }
 
 questions.addEventListener('mousedown', function(event){
