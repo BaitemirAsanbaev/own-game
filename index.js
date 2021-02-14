@@ -27,14 +27,15 @@ teams.addEventListener('mousedown', function(event){
         }
     }
     if(event.target.getAttribute('id') == 'team2'){
-        if(event.ctrlKey)
+        if(event.ctrlKey){
             num2 -=  100;
             event.target.innerText = num2;
         }
         else{
-            num2 +=  100;
+            num2 = num2 + 100;
             event.target.innerText = num2;
         }
+    }
     if(event.target.getAttribute('id') == 'team3'){
         if(event.ctrlKey){
             num3 -=  100;
