@@ -154,11 +154,16 @@ let card = document.querySelector('.card');
 let question = document.querySelector('.question');
 let answer = document.querySelector('.answer');
 let showAnswer = document.querySelector('.answer-btn');
+let hideAnswer = document.querySelector('.clear-btn');
 
 function questionWrite(qid, aid){
     question.innerText = qid;
     showAnswer.addEventListener('click', function(){
         answer.innerText = aid;
+    })
+    hideAnswer.addEventListener('click', function(){
+        answer.innerText = '';
+        question.innerText = '';
     })
 }
 
@@ -168,7 +173,7 @@ questions.addEventListener('mousedown', function(event){
             questionWrite("", "");
         }
         if(event.target.getAttribute('id') == 'n1q2'){
-            questionWrite("");
+            questionWrite("", "");
         }
         if(event.target.getAttribute('id') == 'n1q3'){
             questionWrite("");
