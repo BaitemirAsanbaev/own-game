@@ -1,17 +1,150 @@
 let points = document.querySelector('.team-points');
 let teams = document.querySelector('.all-teams');
 
-let num = 0;
+let num1 = 0;
+let num2 = 0;
+let num3 = 0;
+let num4 = 0;
+let num5 = 0;
+let num6 = 0;
+let num7 = 0;
+let num8 = 0;
+let num9 = 0;
+let num10 = 0;
+let num11 = 0;
+let num12 = 0;
+let num13 = 0;
+
 teams.addEventListener('mousedown', function(event){
-    if(event.target.tagName == 'SPAN'){
+    if(event.target.getAttribute('id') == 'team1'){
         if(event.ctrlKey){
-            num -=  100;
-            event.target.innerText = num;
+            num1 -=  100;
+            event.target.innerText = num1;
         }
         else{
-            num +=  100;
-            event.target.innerText = num;
+            num1 +=  100;
+            event.target.innerText = num1;
         }
+    }
+    if(event.target.getAttribute('id') == 'team2'){
+        if(event.ctrlKey)
+            num2 -=  100;
+            event.target.innerText = num2;
+        }
+        else{
+            num2 +=  100;
+            event.target.innerText = num2;
+        }
+    if(event.target.getAttribute('id') == 'team3'){
+        if(event.ctrlKey){
+            num3 -=  100;
+            event.target.innerText = num3;
+        }
+        else{
+            num3 +=  100;
+            event.target.innerText = num3;
+        }
+    }
+    if(event.target.getAttribute('id') == 'team4'){
+        if(event.ctrlKey){
+            num4 -=  100;
+            event.target.innerText = num4;
+        }
+        else{
+            num4 +=  100;
+            event.target.innerText = num4;
+        }
+    }
+    if(event.target.getAttribute('id') == 'team5'){
+        if(event.ctrlKey){
+            num5 -=  100;
+            event.target.innerText = num5;
+        }
+        else{
+            num5 +=  100;
+            event.target.innerText = num5;
+        }
+    }
+    if(event.target.getAttribute('id') == 'team6'){
+        if(event.ctrlKey){
+            num6 -=  100;
+            event.target.innerText = num6;
+        }
+        else{
+            num6 +=  100;
+            event.target.innerText = num6;
+        }
+    }
+    if(event.target.getAttribute('id') == 'team7'){
+        if(event.ctrlKey){
+            num7 -=  100;
+            event.target.innerText = num7;
+        }
+        else{
+            num7 +=  100;
+            event.target.innerText = num7;
+        }
+    }
+    if(event.target.getAttribute('id') == 'team8'){
+        if(event.ctrlKey){
+            num8 -=  100;
+            event.target.innerText = num8;
+        }
+        else{
+            num8 +=  100;
+            event.target.innerText = num8;
+        }
+    }
+    if(event.target.getAttribute('id') == 'team9'){
+        if(event.ctrlKey){
+            num9 -=  100;
+            event.target.innerText = num9;
+        }
+        else{
+            num9 +=  100;
+            event.target.innerText = num9;
+        }
+    }
+    if(event.target.getAttribute('id') == 'team10'){
+        if(event.ctrlKey){
+            num10 -=  100;
+            event.target.innerText = num10;
+        }
+        else{
+            num10 +=  100;
+            event.target.innerText = num10;
+        }
+    }
+    if(event.target.getAttribute('id') == 'team11'){
+        if(event.ctrlKey){
+            num11 -=  100;
+            event.target.innerText = num11;
+        }
+        else{
+            num11 +=  100;
+            event.target.innerText = num11;
+        }
+    }
+    if(event.target.getAttribute('id') == 'team12'){
+        if(event.ctrlKey){
+            num12 -=  100;
+            event.target.innerText = num12;
+        }
+        else{
+            num12 +=  100;
+            event.target.innerText = num12;
+        }
+    }
+    if(event.target.getAttribute('id') == 'team13'){
+        if(event.ctrlKey){
+            num13 -=  100;
+            event.target.innerText = num13;
+        }
+        else{
+            num13 +=  100;
+            event.target.innerText = num13;
+        }
+    
     }
 
 })
