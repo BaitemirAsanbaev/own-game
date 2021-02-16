@@ -158,7 +158,7 @@ let showAnswer = document.querySelector('.answer-btn');
 let hideAnswer = document.querySelector('.clear-btn');
 
 function questionWrite(qid, aid){
-    question.innerText = qid;
+    question.innerHTML = qid;
     showAnswer.addEventListener('click', function(){
         answer.innerText = aid;
     })
@@ -171,124 +171,124 @@ function questionWrite(qid, aid){
 questions.addEventListener('mousedown', function(event){
     if(event.target.tagName == 'DIV'){
         if(event.target.getAttribute('id') == 'n1q1'){
-            questionWrite("", "");
+            questionWrite("Сумма всех сторон прямоугольника", "Периметр");
         }
         if(event.target.getAttribute('id') == 'n1q2'){
-            questionWrite("", "");
+            questionWrite("Числа расположенные правее нуля", "Положительные");
         }
         if(event.target.getAttribute('id') == 'n1q3'){
-            questionWrite("");
+            questionWrite("Сколько цифр вы знаете", "10 цифр");
         }
         if(event.target.getAttribute('id') == 'n1q4'){
-            questionWrite("");
+            questionWrite("Прибор для измерения углов", "Транспортир");
         }
         if(event.target.getAttribute('id') == 'n1q5'){
-            questionWrite("");
+            questionWrite("15/2 : 20/2", "3/4");
         }
         if(event.target.getAttribute('id') == 'n2q1'){
-            questionWrite("");
+            questionWrite("В каком году был создан АК-74", "В 1974 году");
         }
         if(event.target.getAttribute('id') == 'n2q2'){
-            questionWrite("");
+            questionWrite("Главнокомандующий вооруженными силами КР", "Президент");
         }
         if(event.target.getAttribute('id') == 'n2q3'){
-            questionWrite("");
+            questionWrite("Начало и конец Первой Мировой Войоны", "1914 - 1918");
         }
         if(event.target.getAttribute('id') == 'n2q4'){
-            questionWrite("");
+            questionWrite("Высшее звание в армии", "Генерал");
         }
         if(event.target.getAttribute('id') == 'n2q5'){
-            questionWrite("");
+            questionWrite("Как прозвали в народе  гвардейский миномёт 'БМ-13 в годы Великой Отечественной Войны'", "Катюша");
         }
         if(event.target.getAttribute('id') == 'n3q1'){
-            questionWrite("");
+            questionWrite("Кета + Рак");
         }
         if(event.target.getAttribute('id') == 'n3q2'){
-            questionWrite("");
+            questionWrite("Меч + Пион");
         }
         if(event.target.getAttribute('id') == 'n3q3'){
-            questionWrite("");
+            questionWrite("Тина + Рак");
         }
         if(event.target.getAttribute('id') == 'n3q4'){
-            questionWrite("");
+            questionWrite("Ель + Кит");
         }
         if(event.target.getAttribute('id') == 'n3q5'){
-            questionWrite("");
+            questionWrite("Усы + Пар");
         }
         if(event.target.getAttribute('id') == 'n4q1'){
-            questionWrite("");
+            questionWrite("Кто должен уступить, входящий или выходящий", "Входящий");
         }
         if(event.target.getAttribute('id') == 'n4q2'){
-            questionWrite("");
+            questionWrite("Кто должен первым здороваться, младший или старший", "Младший");
         }
         if(event.target.getAttribute('id') == 'n4q3'){
-            questionWrite("");
+            questionWrite("Кто должен подавать руку для рукопожатия ", "Старший");
         }
         if(event.target.getAttribute('id') == 'n4q4'){
-            questionWrite("");
+            questionWrite("Почему, когда девушка идёт вниз по лестницеб мужчина должен стоять на 2-3 ступени ниже", "Чтобы поймать девушку, если она упадёт");
         }
         if(event.target.getAttribute('id') == 'n4q5'){
-            questionWrite("");
+            questionWrite("Кто должен первым здороваться | кто должен подавать руку для рукопожатия: муж, жена", "Первым здоровается муж, подаёт руку жена");
         }
         if(event.target.getAttribute('id') == 'n5q1'){
-            questionWrite("");
+            questionWrite("Кто написал роман 'Война и мир'", "Л. Н. Толстой");
         }
         if(event.target.getAttribute('id') == 'n5q2'){
-            questionWrite("");
+            questionWrite("Кто является главным героем романа 'Герой нащего времени'", "Грегорий Печерин");
         }
         if(event.target.getAttribute('id') == 'n5q3'){
-            questionWrite("");
+            questionWrite("Самый знаменитый баснописец", "И. А. Крылов");
         }
         if(event.target.getAttribute('id') == 'n5q4'){
-            questionWrite("");
+            questionWrite("Сколько было мушкетеров в романе 'Три мушкетёра'", "4");
         }
         if(event.target.getAttribute('id') == 'n5q5'){
-            questionWrite("");
+            questionWrite("Продолжите слова: " + "<br>" + "'Идёт ......, - песнь заводит," + "<br>" + "налево - ...... говорит" + "<br>" + "Там чудеса: там ....... бродит," + "<br>" + "...... на ветвях сидит'", "Направо, сказку, леший, русалка");
         }
         if(event.target.getAttribute('id') == 'n6q1'){
-            questionWrite("");
+            questionWrite("В какой спортивной игре судью называют 'Арбитр'", "В футболе");
         }
         if(event.target.getAttribute('id') == 'n6q2'){
-            questionWrite("");
+            questionWrite("Самый знаменитый баскетболист", "Майкл Джордан");
         }
         if(event.target.getAttribute('id') == 'n6q3'){
-            questionWrite("");
+            questionWrite("Самый высокооплачиваемый футболист в мире", "Леонель Месси");
         }
         if(event.target.getAttribute('id') == 'n6q4'){
-            questionWrite("");
+            questionWrite("Действующий чемпион UFC по лёгкому весу", "Хабиб Нурмагомедов");
         }
         if(event.target.getAttribute('id') == 'n6q5'){
-            questionWrite("");
+            questionWrite("Длинна футбольного поля", "90 - 120 метров");
         }
         if(event.target.getAttribute('id') == 'n7q1'){
-            questionWrite("");
+            questionWrite("Актёр игравший капитана Джека Воробья в фильме 'Пираты Корибского моря'", "Джонни Депп");
         }
         if(event.target.getAttribute('id') == 'n7q2'){
-            questionWrite("");
+            questionWrite("Актёр который сам выполнял все трюки в своих фильмах", "Джеки Чан");
         }
         if(event.target.getAttribute('id') == 'n7q3'){
-            questionWrite("");
+            questionWrite("Актёр который сыграл главную роль в фильме 'Титаник'", "Леонардо Ди Каприо");
         }
         if(event.target.getAttribute('id') == 'n7q4'){
-            questionWrite("");
+            questionWrite("Фильм получивший оскар за 'Лучший фильм', 'Луший режиссёр' и 'Лучший сценарий' в 2020 году", "'Паразиты'");
         }
         if(event.target.getAttribute('id') == 'n7q5'){
-            questionWrite("");
+            questionWrite("Автор книги, по которой снят одноимённый фильм 'Оно'", "Стивен Кинг");
         }
         if(event.target.getAttribute('id') == 'n8q1'){
-            questionWrite("");
+            questionWrite("Из какой части тела Адама создали Еву", "Ребро");
         }
         if(event.target.getAttribute('id') == 'n8q2'){
-            questionWrite("");
+            questionWrite("Три главных Бога греции", "Зевс, Аид, Посейдон");
         }
         if(event.target.getAttribute('id') == 'n8q3'){
-            questionWrite("");
+            questionWrite("За сколько дней Земля совершаетполный оборот вокруг Солнца", "365 дней");
         }
         if(event.target.getAttribute('id') == 'n8q4'){
-            questionWrite("");
+            questionWrite("Прежнее название Стамбула", "Константинополь");
         }
         if(event.target.getAttribute('id') == 'n8q5'){
-            questionWrite("");
+            questionWrite("Какая буква состоит из трети алфавита", "(Ъ) твердый знак");
         }
         
     }
