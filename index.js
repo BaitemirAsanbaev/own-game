@@ -17,7 +17,7 @@ let num13 = 0;
 
 teams.addEventListener('mousedown', function(event){
     if(event.target.getAttribute('id') == 'team1'){
-        if(event.ctrlKey){
+        if(event.which == 3){
             num1 -=  100;
             event.target.innerText = num1;
         }
@@ -27,7 +27,7 @@ teams.addEventListener('mousedown', function(event){
         }
     }
     if(event.target.getAttribute('id') == 'team2'){
-        if(event.ctrlKey){
+        if(event.which == 3){
             num2 -=  100;
             event.target.innerText = num2;
         }
@@ -37,7 +37,7 @@ teams.addEventListener('mousedown', function(event){
         }
     }
     if(event.target.getAttribute('id') == 'team3'){
-        if(event.ctrlKey){
+        if(event.which == 3){
             num3 -=  100;
             event.target.innerText = num3;
         }
@@ -47,7 +47,7 @@ teams.addEventListener('mousedown', function(event){
         }
     }
     if(event.target.getAttribute('id') == 'team4'){
-        if(event.ctrlKey){
+        if(event.which == 3){
             num4 -=  100;
             event.target.innerText = num4;
         }
@@ -57,7 +57,7 @@ teams.addEventListener('mousedown', function(event){
         }
     }
     if(event.target.getAttribute('id') == 'team5'){
-        if(event.ctrlKey){
+        if(event.which == 3){
             num5 -=  100;
             event.target.innerText = num5;
         }
@@ -67,7 +67,7 @@ teams.addEventListener('mousedown', function(event){
         }
     }
     if(event.target.getAttribute('id') == 'team6'){
-        if(event.ctrlKey){
+        if(event.which == 3){
             num6 -=  100;
             event.target.innerText = num6;
         }
@@ -77,7 +77,7 @@ teams.addEventListener('mousedown', function(event){
         }
     }
     if(event.target.getAttribute('id') == 'team7'){
-        if(event.ctrlKey){
+        if(event.which == 3){
             num7 -=  100;
             event.target.innerText = num7;
         }
@@ -87,7 +87,7 @@ teams.addEventListener('mousedown', function(event){
         }
     }
     if(event.target.getAttribute('id') == 'team8'){
-        if(event.ctrlKey){
+        if(event.which == 3){
             num8 -=  100;
             event.target.innerText = num8;
         }
@@ -97,7 +97,7 @@ teams.addEventListener('mousedown', function(event){
         }
     }
     if(event.target.getAttribute('id') == 'team9'){
-        if(event.ctrlKey){
+        if(event.which == 3){
             num9 -=  100;
             event.target.innerText = num9;
         }
@@ -107,7 +107,7 @@ teams.addEventListener('mousedown', function(event){
         }
     }
     if(event.target.getAttribute('id') == 'team10'){
-        if(event.ctrlKey){
+        if(event.which == 3){
             num10 -=  100;
             event.target.innerText = num10;
         }
@@ -117,7 +117,7 @@ teams.addEventListener('mousedown', function(event){
         }
     }
     if(event.target.getAttribute('id') == 'team11'){
-        if(event.ctrlKey){
+        if(event.which == 3){
             num11 -=  100;
             event.target.innerText = num11;
         }
@@ -127,7 +127,7 @@ teams.addEventListener('mousedown', function(event){
         }
     }
     if(event.target.getAttribute('id') == 'team12'){
-        if(event.ctrlKey){
+        if(event.which == 3){
             num12 -=  100;
             event.target.innerText = num12;
         }
@@ -137,7 +137,7 @@ teams.addEventListener('mousedown', function(event){
         }
     }
     if(event.target.getAttribute('id') == 'team13'){
-        if(event.ctrlKey){
+        if(event.which == 3){
             num13 -=  100;
             event.target.innerText = num13;
         }
@@ -149,7 +149,7 @@ teams.addEventListener('mousedown', function(event){
     }
 
 })
-
+document.oncontextmenu = function (){return false};
 let questions = document.querySelector('.questions');
 let card = document.querySelector('.card');
 let question = document.querySelector('.question');
